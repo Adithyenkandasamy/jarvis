@@ -1,0 +1,21 @@
+
+```
+
+### 3. **Testing Your Setup**
+
+Run the code again after making these changes. If you still encounter issues:
+
+- **Check Microphone Input:**
+  Use the `arecord` command to test if your microphone is capturing audio correctly:
+  
+  ```bash
+  arecord -d 5 test.wav
+  ```
+
+  This command records a 5-second audio clip. You can play it back with:
+  
+  ```bash
+  aplay test.wav
+  ```
+
+If the recording and playback work, your microphone is functioning correctly, and any remaining issues may be related to software configuration. If the errors persist, please let me know!
