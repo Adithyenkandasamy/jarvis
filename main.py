@@ -66,14 +66,15 @@ def respond(text):
         rs.say("Opening the calculator")
         os.system('gnome-calculator')
     elif "search" in text:
-        rs.say("What do you want to search on YouTube?")
-        search_query = tc.takecommand()
-        rs.say(f"Searching for {search_query} on YouTube.")
-        wb.open(f"https://www.youtube.com/results?search_query={search_query}")
-        rs.say("Do you want to control the video? Say a command like play, pause, mute, or stop.")
-        
-        # Adding YouTube playback control commands
-        while True:
+        rs.say("Where do you want to search?")
+        What_search = tc.takecommand().lower()
+        if "youtube" in What_search:
+          rs.say("What do you want to search on YouTube?")
+          search_query = tc.takecommand()
+          rs.say(f"Searching for {search_query} on YouTube.")
+          wb.open(f"https://www.youtube.com/results?search_query={search_query}")
+          rs.say("Do you want to control the video? Say a command like play, pause, mute, or stop.")
+          while True:
             control_command = tc.takecommand().lower()
             if "play the video" in control_command or "pause the video" in control_command:
                 rs.say("Toggling play/pause on the video.")
@@ -104,6 +105,12 @@ def respond(text):
                 break
             else:
                 rs.say("Sorry, I didn't understand that command.")
+        elif "google" in What_search:
+          rs.say("What do you want to search on google?")
+          search_query = tc.takecommand()
+          rs.say(f"Searching for {search_query} on google.")
+          wb.open(f"https://www.google.com/search?q={search_query}")
+        
     elif "shutdown the computer" in text:
         rs.say("Shutting down the computer.")
         os.system('shutdown now')
