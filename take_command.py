@@ -18,3 +18,4 @@ def takecommand():
             print("Say that again please...")    
             return "None"
         return text
+takecommand()
