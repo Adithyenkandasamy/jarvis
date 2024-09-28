@@ -9,5 +9,5 @@ def say(text):
     engine.say(text)
     engine.runAndWait()
 
-say("hello")    
+    
 
