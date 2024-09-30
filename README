@@ -13,7 +13,7 @@ Run the code again after making these changes. If you still encounter issues:
   ```
 
   This command records a 5-second audio clip. You can play it back with:
-  
+  yes
   ```bash
   aplay test.wav
   ```
