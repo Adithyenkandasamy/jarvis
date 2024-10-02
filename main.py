@@ -46,22 +46,7 @@ def respond(text):
         engine2.setProperty('rate', 110)
         engine2.say(tell_jokes())
         engine2.runAndWait()
-    elif "play the song Kangal" in text or "play the song kangal" in text:
-        rs.say("Sir, let's listen to the song")
-        song_path = "/home/kirubha11/Music/Kangal-Edho-MassTamilan.dev.mpga"
-        os.system(f"rhythmbox '{song_path}'")
-    elif "play the song Asha" in text or "play the song asha" in text or "Asa" in text or "asa" in text:
-        rs.say("Sir, let's listen to the song")
-        song_path = "/home/kirubha11/Music/Aasa Kooda Sai Abhyankkar 320 Kbps.mpga"
-        os.system(f"rhythmbox '{song_path}'")
-    elif "play the song Piravi" in text or "play the song piravi" in text:
-        rs.say("Sir, let's listen to the song")
-        song_path = "/home/kirubha11/Music/Piravi.mpga"
-        os.system(f"rhythmbox '{song_path}'")
-    elif "play the song pirai" in text or "play the song Pirai" in text:
-        rs.say("Sir, let's listen to the song")
-        song_path = "/home/kirubha11/Music/Pirai-Thedum.mpga"
-        os.system(f"rhythmbox '{song_path}'")
+    
     elif "open calculator" in text:
         rs.say("Opening the calculator")
         os.system('gnome-calculator')
