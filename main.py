@@ -4,15 +4,11 @@ import webbrowser as wb
 import pyautogui
 import respond as rs
 import take_command as tc
-import pyjokes
 import date_time as dt
 
 assis_name = "Jarvis"
 boss_name = "gokul"
 
-def tell_jokes():
-    joke = pyjokes.get_joke()
-    return joke
 
 
 def respond(text):
