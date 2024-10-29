@@ -1,3 +1,9 @@
+from gtts import gTTS
+import os
+import webbrowser as wb
+import pyautogui
+import take_command as tc
+import date_time as dt
 
 assis_name = "Jarvis"
 boss_name = "gokul"
