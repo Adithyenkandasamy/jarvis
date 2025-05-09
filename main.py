@@ -4,16 +4,12 @@ import webbrowser as wb
 import pyautogui
 import take_command as tc
 import date_time as dt
+from respond import say
+
 
 assis_name = "Jarvis"
 boss_name = "gokul"
 
-# Function to use Google Text-to-Speech (gTTS) for speech output
-def say(text):
-    tts = gTTS(text=text, lang='en')
-    tts.save("response.mp3")
-    os.system("mpg123 response.mp3")
-    os.remove("response.mp3")  # Clean up the audio file after playing
 
 def respond(text):
     if "hello" in text:

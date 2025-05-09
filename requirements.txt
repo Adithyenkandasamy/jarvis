@@ -1,5 +1,7 @@
 certifi==2024.8.30
 charset-normalizer==3.3.2
+click==8.1.8
+gTTS==2.5.4
 idna==3.8
 MouseInfo==0.1.3
 pillow==10.4.0
@@ -18,6 +20,3 @@ requests==2.32.3
 SpeechRecognition==3.10.4
 typing_extensions==4.12.2
 urllib3==2.2.2
-
-# pip freeze > req.txt
-# pip install -r req.txt
