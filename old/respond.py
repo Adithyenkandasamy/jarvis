@@ -9,7 +9,7 @@ def say(text):
     }
     payload = {
         "input": text,
-        "voice": "af_alloy"  # Use the voice that your server actually loaded
+        "voice": "af_sky"  # Use the voice that your server actually loaded
     }
 
     response = requests.post(url, json=payload, headers=headers)
@@ -23,4 +23,4 @@ def say(text):
     else:
         print("TTS request failed:", response.status_code, response.text)
 
-say("hello hi tell me about yourself")
+say("I know things feel heavy right now, but you’re not alone. I care about you deeply. Together, we’ll get through this. One moment, one breath, one step at a time.")
