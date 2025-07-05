@@ -9,6 +9,7 @@ def start_ollama():
     except:
         print("[Ollama] Starting in background...")
         subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["ollama", "pull", "phi3"])
         time.sleep(3)
         while True:
             try:
